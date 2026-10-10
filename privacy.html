@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy practices of the privately operated VPS Evidence Drive tool.">
+  <title>Privacy Policy | VPS Evidence Drive</title>
+  <style>:root{color-scheme:light;--bg:#f7f9fc;--paper:#fff;--ink:#17243b;--muted:#59677c;--line:#dae2ee;--link:#2459a5;--accent:#3e66c6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--link)}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:10px;background:#fff;padding:10px}.skip:focus{left:10px;z-index:10}
+header{background:#17243b;color:white;border-bottom:3px solid #4b79da}header .wrap{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.25rem;flex-wrap:wrap}
+.brand{font-weight:750;color:#fff;text-decoration:none;font-size:1.12rem;letter-spacing:.01em}nav{display:flex;gap:1.1rem;flex-wrap:wrap}nav a{color:#e7eefb;text-decoration:none;font-size:.93rem}nav a[aria-current="page"]{font-weight:700;border-bottom:2px solid #bcd2ff}
+main{max-width:900px;margin:2rem auto 3rem;padding:0 1.25rem}article{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 30px rgba(19,35,67,.05);padding:clamp(1.4rem,4vw,3rem)}
+h1,h2{line-height:1.28;color:#152644}h1{font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 1rem}h2{font-size:1.2rem;margin:2rem 0 .6rem}
+p,ul{margin:.8rem 0}ul{padding-left:1.3rem}li{margin:.25rem 0}
+.eyebrow{color:#3e66c6;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:.5rem}
+.lead{font-size:1.1rem;color:#41526e}.meta{color:var(--muted);font-size:.92rem}.note{background:#eef3ff;border-left:3px solid #4b79da;padding:.85rem 1.1rem;margin:1.4rem 0;border-radius:0 6px 6px 0}
+footer{max-width:900px;margin:0 auto 2rem;padding:0 1.25rem;color:var(--muted);font-size:.88rem}footer a{margin-right:1rem}
+@media(max-width:580px){main{margin:1rem auto 2rem}article{padding:1.35rem}header .wrap{padding:.8rem 1.25rem}nav{gap:.75rem}}</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./index.html">VPS Evidence Drive</a>
+      <nav aria-label="Primary navigation">
+        <a href="./index.html">Home</a>
+        <a href="./privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <article>
+      <p class="eyebrow">VPS Evidence Drive</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> October 10, 2026</p>
+
+      <h2>1. Overview</h2>
+      <p>VPS Evidence Drive ("the Application") is a privately operated utility used to transfer, store, and verify selected evidence files between a virtual private server (VPS) and the application owner's Google Drive account.</p>
+      <p>This policy explains how the Application accesses and handles Google Drive data.</p>
+      <p>The Application is not offered as a public service.</p>
+
+      <h2>2. Information Accessed</h2>
+      <p>With the owner's authorization, the Application may access:</p>
+      <ul>
+        <li>Google Drive files and folders created through the Application or explicitly made available to it.</li>
+        <li>File names, identifiers, sizes, timestamps, and other metadata needed for file operations.</li>
+        <li>File contents selected for upload, download, recovery, or integrity verification.</li>
+        <li>OAuth credentials required to maintain authorized access to Google Drive.</li>
+      </ul>
+      <p>The Application uses the Google Drive OAuth scope <code>https://www.googleapis.com/auth/drive.file</code>.</p>
+      <p>It does not request unrestricted access to all files in the owner's Google Drive.</p>
+
+      <h2>3. How Information Is Used</h2>
+      <p>Google Drive information is used to:</p>
+      <ul>
+        <li>Upload owner-approved evidence files.</li>
+        <li>Organize and retrieve stored evidence.</li>
+        <li>Restore selected files for verification.</li>
+        <li>Compare file sizes and SHA-256 checksums.</li>
+        <li>Produce operational reports and file manifests.</li>
+        <li>Diagnose transfer or verification failures.</li>
+      </ul>
+      <p>Google Drive data is not used for advertising, marketing profiling, or training general-purpose AI models.</p>
+
+      <h2>4. Storage and Security</h2>
+      <p>The Application operates on a privately administered VPS.</p>
+      <p>OAuth credentials are stored in a restricted configuration file outside public repositories.</p>
+      <p>Evidence files, manifests, and operational reports may be stored locally on the VPS and in the owner's Google Drive.</p>
+      <p>Access to these resources is controlled through the VPS account, filesystem permissions, Google authorization, and operational procedures.</p>
+      <p>Reasonable security measures are used to restrict unauthorized access. However, no storage or transfer system can guarantee absolute security.</p>
+
+      <h2>5. Data Sharing</h2>
+      <p>The Application does not sell Google user data.</p>
+      <p>Google Drive content is transferred only as needed for owner-authorized operations. Google Drive and the infrastructure providers used to operate the service necessarily process data within their respective services.</p>
+      <p>The Application does not automatically publish evidence files or make them publicly accessible.</p>
+      <p>Any additional sharing of evidence requires a separate action or authorization by the owner.</p>
+
+      <h2>6. Data Retention and Deletion</h2>
+      <p>Evidence stored on Google Drive remains there until the owner deletes it or otherwise manages its retention.</p>
+      <p>Local staging files, restored files, manifests, and reports may remain on the VPS until removed under the owner's maintenance procedures.</p>
+      <p>The Application does not currently perform automatic synchronization or automatic deletion of evidence.</p>
+      <p>Revoking Google OAuth authorization prevents further authorized Google Drive access through that connection. It does not automatically delete previously uploaded evidence or local copies.</p>
+
+      <h2>7. User Control</h2>
+      <p>The Google account owner may revoke the Application's Google account access through Google's account security and third-party connection settings.</p>
+      <p>The owner also controls which evidence files are selected for transfer and may manage or delete stored evidence through Google Drive and the VPS.</p>
+
+      <h2>8. Website Visitors</h2>
+      <p>This informational website does not intentionally collect personal information through registration forms or embedded analytics.</p>
+      <p>The website is hosted using GitHub Pages. GitHub may process technical information associated with website visits according to its own policies.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>This policy may be updated if the Application's functionality, data handling, or applicable requirements change.</p>
+      <p>The current version will be published at this website.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions regarding this Privacy Policy or the Application's handling of Google Drive data, contact:</p>
+      <p><strong><a href="mailto:nonzeroworld@gmail.com">nonzeroworld@gmail.com</a></strong></p>
+    </article>
+  </main>
+  <footer>
+    <p>VPS Evidence Drive · Private infrastructure utility</p>
+    <p><a href="./index.html">Home</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Service</a></p>
+  </footer>
+</body>
+</html>

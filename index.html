@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Private evidence storage and verification utility using the Google Drive API.">
+  <title>Home | VPS Evidence Drive</title>
+  <style>:root{color-scheme:light;--bg:#f7f9fc;--paper:#fff;--ink:#17243b;--muted:#59677c;--line:#dae2ee;--link:#2459a5;--accent:#3e66c6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--link)}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:10px;background:#fff;padding:10px}.skip:focus{left:10px;z-index:10}
+header{background:#17243b;color:white;border-bottom:3px solid #4b79da}header .wrap{max-width:900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.25rem;flex-wrap:wrap}
+.brand{font-weight:750;color:#fff;text-decoration:none;font-size:1.12rem;letter-spacing:.01em}nav{display:flex;gap:1.1rem;flex-wrap:wrap}nav a{color:#e7eefb;text-decoration:none;font-size:.93rem}nav a[aria-current="page"]{font-weight:700;border-bottom:2px solid #bcd2ff}
+main{max-width:900px;margin:2rem auto 3rem;padding:0 1.25rem}article{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 30px rgba(19,35,67,.05);padding:clamp(1.4rem,4vw,3rem)}
+h1,h2{line-height:1.28;color:#152644}h1{font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 1rem}h2{font-size:1.2rem;margin:2rem 0 .6rem}
+p,ul{margin:.8rem 0}ul{padding-left:1.3rem}li{margin:.25rem 0}
+.eyebrow{color:#3e66c6;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:.5rem}
+.lead{font-size:1.1rem;color:#41526e}.meta{color:var(--muted);font-size:.92rem}.note{background:#eef3ff;border-left:3px solid #4b79da;padding:.85rem 1.1rem;margin:1.4rem 0;border-radius:0 6px 6px 0}
+footer{max-width:900px;margin:0 auto 2rem;padding:0 1.25rem;color:var(--muted);font-size:.88rem}footer a{margin-right:1rem}
+@media(max-width:580px){main{margin:1rem auto 2rem}article{padding:1.35rem}header .wrap{padding:.8rem 1.25rem}nav{gap:.75rem}}</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./index.html">VPS Evidence Drive</a>
+      <nav aria-label="Primary navigation">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <article>
+      <p class="eyebrow">Private evidence storage and verification utility</p>
+      <h1>VPS Evidence Drive</h1>
+      <p class="lead">VPS Evidence Drive is a privately operated tool for transferring selected evidence files from a virtual private server (VPS) to the owner's Google Drive account.</p>
+      <p>The tool is designed to preserve development and research evidence, including approved reports, test results, manifests, and related artifacts.</p>
+
+      <h2>How it works</h2>
+      <p>The tool uses rclone and the Google Drive API to:</p>
+      <ul>
+        <li>Upload explicitly selected evidence files to Google Drive.</li>
+        <li>Organize evidence by project, task, source revision, and verification run.</li>
+        <li>Download selected evidence back to the VPS for recovery testing.</li>
+        <li>Verify file integrity using file sizes and SHA-256 checksums.</li>
+      </ul>
+
+      <h2>Google Drive permissions</h2>
+      <p>VPS Evidence Drive requests the <code>drive.file</code> OAuth scope.</p>
+      <p>This permission allows the application to create, read, modify, and delete files that it creates or that the user explicitly makes available to the application. It does not grant unrestricted access to the user's entire Google Drive.</p>
+
+      <h2>Private operation</h2>
+      <p>VPS Evidence Drive is intended for the owner's private infrastructure. It is not a public file-sharing service and does not offer registration or accounts to external users.</p>
+      <p>Google OAuth credentials are stored privately on the VPS and are not published on this website.</p>
+
+      <h2>Policies</h2>
+      <p><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></p>
+      <p><strong>Contact:</strong> <a href="mailto:nonzeroworld@gmail.com">nonzeroworld@gmail.com</a></p>
+      <div class="note">This website provides information about VPS Evidence Drive. It does not expose the application's private storage, credentials, or administrative interfaces.</div>
+    </article>
+  </main>
+  <footer>
+    <p>VPS Evidence Drive · Private infrastructure utility</p>
+    <p><a href="./index.html">Home</a><a href="./privacy.html">Privacy Policy</a><a href="./terms.html">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
